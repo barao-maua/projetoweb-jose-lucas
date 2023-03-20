@@ -1,6 +1,33 @@
-header{
-    border-bottom: 2px solid black;
+body{
+    background-color:lightblue;
 }
+#container{
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+    #container .box{
+        width: 30%;
+    }
+    #container .box h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2em;
+        margin: 0%;
+        padding-left: 3%;
+    }
+    #container .box h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        margin: 0%;
+        padding-left: 3%;
+    }  
+    #container .box ul#list{
+        list-style: none;
+        display: flex;
+        justify-content:space-around;
+    }
+    
 main{
     border-bottom: 2px solid black;
 }
