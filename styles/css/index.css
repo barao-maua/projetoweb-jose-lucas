@@ -31,3 +31,17 @@ body{
 main{
     border-bottom: 2px solid black;
 }
+    article{
+      padding-left:20%;
+      padding-right:20%;  
+    }
+    article h1{
+        text-align: center;
+    }
+    article p{
+        text-align: justify;
+    }
+
+footer{
+    text-align: center;
+}
