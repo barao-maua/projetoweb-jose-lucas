@@ -9,3 +9,9 @@
         text-align: justify;
     }
 
+div#image{
+    text-align: center;
+}
+    div#image img{
+        width: 65%;        
+    }
