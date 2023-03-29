@@ -1,7 +1,8 @@
-    article{
-      padding-left:20%;
-      padding-right:20%;  
-    }
+article{
+    padding-left:20%;
+    padding-right:20%;  
+    font-family: 'Times New Roman', Times, serif;
+}
     article h1{
         text-align: center;
     }
@@ -9,9 +10,12 @@
         text-align: justify;
     }
 
-div#image{
+div#center{
     text-align: center;
 }
-    div#image img{
+    div#center img{
         width: 65%;        
+    }
+    div#center button{
+        margin: 2% auto;        
     }

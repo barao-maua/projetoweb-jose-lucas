@@ -1,29 +1,31 @@
 body{
     background-color:lightblue;
 }
-header#conteiner{
+header#cont{
     border-bottom: 2px solid black;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
-    #conteiner nav.box{
-        width: 30%;
-        padding-top: 10px;
-    }
-    #conteiner .box h1{
+
+    #cont .box h1{
         font-family: 'Times New Roman', Times, serif;
         font-size: 2em;
-        margin: 0%;
-        padding-left: 3%;
+        margin: 0% 2%;
+        padding-left: 5%;
     }
-    #conteiner .box h2{
+    #cont .box h2{
         font-family: 'Times New Roman', Times, serif;
         font-size: 1em;
-        margin: 0%;
-        padding-left: 3%;
+        margin: 0% 2%;
+        padding-left: 5%;
+    }
+    #cont nav.box{
+        width: 40%;
+        padding-top: 10px;
+        padding-left: 2%;
     }  
-    #conteiner .box ul#list{
+    #cont .box ul#list{
         margin-top: 3%;
         list-style: none;
         display: flex;
@@ -35,3 +37,6 @@ footer{
     font-size: small;
     margin-top: 1%;
 }
+    p{
+        margin-bottom: 0rem;
+    }
