@@ -25,6 +25,11 @@ main{
 
                 margin: 5px;
             }
+            main table tbody tr td button {
+                color: black;
+                background: gray;
+
+            }
 
     main nav input {
 
