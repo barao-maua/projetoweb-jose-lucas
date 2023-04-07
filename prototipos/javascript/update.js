@@ -1,7 +1,6 @@
 function seleciona(button) {
     let materia;
     let professor;
-    let button;
     switch (button) {
         case 'button1':
             materia = document.getElementById('materia1');
