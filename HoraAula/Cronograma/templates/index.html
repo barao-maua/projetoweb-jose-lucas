@@ -10,25 +10,21 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static '/css/index.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/padrao.css' %}">
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/padrao.css' %}"> -->
 </head>
 
 <body>
 
-    <header id="cont">
+    <header>
 
-        <div class="box">
+        <h1> Hora Aula </h1>
 
-            <h1> Hora Aula </h1>
+        <nav>
 
-        </div>
+            <ul>
 
-        <nav class="box">
-
-            <ul id="list">
-
-                <li class="item"><a href=""> Home </a></li>
-                <li id="item"><a href=""> Visualização de Aula </a></li>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="read.html"> Visualização de Aula </a> </li>
 
             </ul>
 
@@ -38,37 +34,152 @@
 
     <main>
 
-        <section>
+        <div class="sobre">
 
-            <article>
+            <h3> SOBRE O PROJETO </h3>
+            <p> Um projeto para implementar uma melhoria na Grade de Horários, fornecendo para alunos, docentes e coordenadores uma maior facilidade para utilização além de disponibilizar o mais claro possível as informações. </p>
 
-                <div id="center">
+        </div>
 
-                    <br><br>
+        <hr>
 
-                    <div class="sobre">
+        <table class="tabela">
 
-                        <h3 id="sobre"> SOBRE O PROJETO </h3>
-                        <p> Um projeto para implementar uma melhor uma Grade de Horários, fornecendo para alunos, docentes e coordenadores uma maior facilidade para manipular. Deixando o mais claro possível as informações, como qual professor irá ministrar cada matéria, em qual dia da semana o aluno terá aula daquela matéria. </p>           
-                    
-                    </div>
+            <thead>
 
-                    <hr>
-                    
-                    <img src="{% static '/images/tabela sem fundo.png' %}" alt="tabela exemplo de aula">
-                    <br>
-                    <button type="button" class="btn btn-secondary"> <a href=""> Acessar Horários </a> </button>
-                    
-                </div>
+                <tr>
 
-            </article>
-        </section>
+                    <th> Horário/Dia </th>
+                    <th> Segunda </th>
+                    <th> Terça </th>
+                    <th> Quarta </th>
+                    <th> Quinta </th>
+                    <th> Sexta </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td> 19h10 - 20h00 </td>
+
+                    <td>
+                        <p class="materia"> Análise de Algoritmos </p>
+                        <p class="professor"> Felipe Carvalho </p>
+                    </td>
+
+                    <td class="alternativo">
+                        <p class="materia"> Gerência de Projeto I </p>
+                        <p class="professor"> Ricardo Morelli </p>
+                    </td>
+
+                    <td>
+                        <p class="materia"> Língua Estrangeira </p>
+                        <p class="professor"> Érika Chiarello </p>
+                    </td>
+
+                    <td class="alternativo">
+                        <p class="materia"> Compiladores
+                        <p class="professor"> José Cabral </p>
+                    </td>
+
+                    <td>
+                        <p class="materia"> Programação Web
+                        <p class="professor"> Newton Shydeo </p>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td> 20h00 - 20h50 </td>
+
+                    <td>
+                        <p class="materia"> Análise de Algoritmos </p>
+                        <p class="professor"> Felipe Carvalho </p>
+                    </td>
+                    <td class="alternativo">
+                        <p class="materia"> Gerência de Projeto I </p>
+                        <p class="professor"> Ricardo Morelli </p>
+                    </td>
+                    <td>
+                        <p class="materia"> Língua Estrangeira </p>
+                        <p class="professor"> Érika Chiarello </p>
+                    </td>
+                    <td class="alternativo">
+                        <p class="materia"> Compiladores
+                        <p class="professor"> José Cabral </p>
+                    </td>
+                    <td>
+                        <p class="materia"> Programação Web
+                        <p class="professor"> Newton Shydeo </p>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td> 21h05 - 21h55 </td>
+
+                    <td>
+                        <p class="materia"> Análise de Algoritmos </p>
+                        <p class="professor"> Felipe Carvalho </p>
+                    </td>
+                    <td class="alternativo">
+                        <p class="materia"> Compiladores </p>
+                        <p class="professor"> José Cabral </p>
+                    </td>
+                    <td>
+                        <p class="materia"> Redes de Computadores </p>
+                        <p class="professor"> José Cabral </p>
+                    </td>
+                    <td class="alternativo">
+                        <p class="materia"> Redes de Computadores </p>
+                        <p class="professor"> José Cabral </p>
+                    </td>
+                    <td>
+                        <p class="materia"> Programação Web </p>
+                        <p class="professor"> Newton Shydeo </p>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td> 21h55 - 22h45 </td>
+
+                    <td>
+                        <p class="materia"> Análise de Algoritmos </p>
+                        <p class="professor"> Felipe Carvalho </p>
+                    </td>
+                    <td class="alternativo">
+                        <p class="materia"> Compiladores </p>
+                        <p class="professor"> José Cabral </p>
+                    </td>
+                    <td>
+                        <p class="materia"> Redes de Computadores </p>
+                        <p class="professor"> José Cabral </p>
+                    </td>
+                    <td class="alternativo">
+                        <p class="materia"> Redes de Computadores </p>
+                        <p class="professor"> José Cabral </p>
+                    </td>
+                    <td>
+                        <p class="materia"> Programação Web </p>
+                        <p class="professor"> Newton Shydeo </p>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
     </main>
 
     <footer>
 
-        <p> J & L Developers </p>
-        <p>2023</p>
+        <p> J&L Developers - 2023 </p>
 
     </footer>
     

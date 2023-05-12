@@ -1,60 +1,167 @@
-main {
+body {
 
-    margin-top: -2%;
-    margin-bottom:1%;
+    background-color: #E7E7E7;
+    margin: 0;
+    padding: 0;
 }
 
-div#center {
+header {
 
-    text-align: center;
+    background-color: #4F4F4F;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
 }
 
-div#center button {
-    
-    margin: 0.3% auto;        
+header h1 {
+
+    margin: 20px;
+    color: #FFF;
 }
 
-div#center button a {
+header nav {
 
-    margin-top: 0%;
-    text-decoration: none;
-    color: #FFFFFF;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
-div#center img {
-
-    margin-bottom: 20px;
-    width: 700px;
-}
-
-main section article {
-
-    padding-left: 20%;
-    padding-right: 20%;  
-    font-family: 'Times New Roman', Times, serif;
-}
-
-main section article h1 {
-
-    text-align: center;
-}
-
-
-main section article .sobre {
+header nav ul {
 
     display: flex;
-    margin-bottom: 20px;
 }
 
-main section article .sobre h3 {
+header nav ul li {
+
+    list-style: none;
+}
+
+header nav ul li a {
+
+    color: #FFF;
+    text-decoration: none;
+    margin: 20px;
+}
+
+main {
+
+
+}
+
+main .sobre {
+
+    display: flex;
+    text-align: center;
+    padding: 0 20%;
+    margin: 50px;
+}
+
+main .sobre h3 {
 
     font-size: 3em;
     text-align: center;
-    margin: 0 50px 0 0;
+    margin: auto 50px auto 0;
 }
 
-main section article .sobre p {
+main .sobre p {
 
-    text-align: justify;
     margin: 10px auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+
+    width: 60%;
+    margin: 0 auto;
+}
+
+main .tabela {
+    
+    width: 800px;
+    font-size: 14px;
+    table-layout: fixed;
+    margin: 50px auto 50px auto;
+    border: 1px solid #C0C0C0;
+    background-color: #959595;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main .tabela thead {
+
+
+}
+
+main .tabela thead tr {
+
+    
+}
+
+main .tabela thead tr th {
+
+    background-color: #4F4F4F;
+    color: #FFF;
+    font-weight: bold;
+    padding: 3px;
+}
+
+main .tabela tbody {
+
+    background-color: #FFF;
+    text-align: center;
+}
+
+main .tabela tbody tr {
+
+    
+}
+
+main .tabela tbody tr td:first-child {
+
+    background-color: #4F4F4F;
+    color: #FFF;
+    font-weight: bold;
+    padding: 3px;
+}
+
+main .tabela tbody tr td {
+
+
+}
+
+main .tabela tbody tr td .materia {
+
+
+}
+
+main .tabela tbody tr td .professor {
+
+
+}
+
+main .tabela tbody tr .alternativo {
+
+    background-color: #E7E7E7;
+}
+
+main .tabela tbody tr .alternativo .materia {
+
+
+}
+
+main .tabela tbody tr .alternativo .professor {
+
+
+}
+
+footer {
+
+    background-color: #4F4F4F;
+    padding: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer p {
+
+    color: #FFF;
+    text-align: left;
+    margin: 0;
 }
