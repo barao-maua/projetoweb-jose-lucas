@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Professor(models.Model):
     nome = models.CharField(verbose_name="Nome", max_length=200,null=False, help_text="Nome do Professor" )
-    nomeAbreviado = models.CharField(verbose_name="NomeAbreviado", max_length=50, null=False, help_text="Nome Abreviado do Professor")
+    nome_abreviado = models.CharField(verbose_name="NomeAbreviado", max_length=50, null=False, help_text="Nome Abreviado do Professor")
     cpf = models.CharField(verbose_name="CPF",null=False, max_length = 14, help_text="CPF do professor")
     endereco = models.CharField(verbose_name="Endereco",null=False, max_length=100, help_text="Endereço do professor: Rua e Numero")
     cidade = models.CharField(verbose_name="Cidade", max_length=100,null=False, help_text="Cidade do professor")
