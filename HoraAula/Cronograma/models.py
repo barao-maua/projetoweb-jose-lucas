@@ -47,4 +47,4 @@ class Horario(models.Model):
         help_text="horario da materia"
     )
     def __str__(self):
-        return self.dia+self.horario
+        return self.horario+self.dia
