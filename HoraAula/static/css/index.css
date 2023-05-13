@@ -1,46 +1,4 @@
-body {
 
-    background-color: #E7E7E7;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-
-    background-color: #4F4F4F;
-    display: flex;
-    font-family: 'Open Sans', sans-serif;
-}
-
-header h1 {
-
-    margin: 20px;
-    color: #FFF;
-}
-
-header nav {
-
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
-
-header nav ul {
-
-    display: flex;
-}
-
-header nav ul li {
-
-    list-style: none;
-}
-
-header nav ul li a {
-
-    color: #FFF;
-    text-decoration: none;
-    margin: 20px;
-}
 
 main {
 
@@ -150,18 +108,4 @@ main .tabela tbody tr .alternativo .materia {
 main .tabela tbody tr .alternativo .professor {
 
 
-}
-
-footer {
-
-    background-color: #4F4F4F;
-    padding: 12px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-footer p {
-
-    color: #FFF;
-    text-align: left;
-    margin: 0;
 }
