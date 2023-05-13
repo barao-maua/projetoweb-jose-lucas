@@ -1,5 +1,3 @@
-
-
 main {
 
 
@@ -18,11 +16,13 @@ main .sobre h3 {
     font-size: 3em;
     text-align: center;
     margin: auto 50px auto 0;
+    font-family: sans-serif;
+    font-weight: normal;
 }
 
 main .sobre p {
 
-    margin: 10px auto;
+    margin: auto;
     font-family: 'Open Sans', sans-serif;
 }
 
