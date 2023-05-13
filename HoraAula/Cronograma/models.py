@@ -46,3 +46,5 @@ class Horario(models.Model):
         null=False,
         help_text="horario da materia"
     )
+    def __str__(self):
+        return self.dia+self.horario
