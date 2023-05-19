@@ -3,34 +3,22 @@
     {% load static %}
     
     {% block estilo %}
-        <link rel="stylesheet" type="text/css" href="{% static '/css/index.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static '/css/horario.css' %}">
     {% endblock estilo %}
-
-
-    
-    {% block conteudo %}
-
-        <div class="sobre">
-
-            <h3> SOBRE O PROJETO </h3>
-            <p> Um projeto para implementar uma melhoria na Grade de Horários, fornecendo para alunos, docentes e coordenadores uma maior facilidade para utilização além de disponibilizar o mais claro possível as informações. </p>
-
-        </div>
-
-        <hr>
-
-        <table class="tabela">
-
+  
+    {% block conteudo %}        
+        <table id="tabela">
+            <h1>Horário das Aulas</h1>
             <thead>
 
                 <tr>
 
-                    <th> Horário/Dia </th>
-                    <th> Segunda </th>
-                    <th> Terça </th>
-                    <th> Quarta </th>
-                    <th> Quinta </th>
-                    <th> Sexta </th>
+                    <td> Horário/Dia </td>
+                    <td> Segunda </td>
+                    <td> Terça </td>
+                    <td> Quarta </td>
+                    <td> Quinta </td>
+                    <td> Sexta </td>
 
                 </tr>
 
@@ -39,29 +27,24 @@
             <tbody>
 
                 <tr>
-
                     <td> 19h10 - 20h00 </td>
 
                     <td>
                         <p class="materia"> Análise de Algoritmos </p>
                         <p class="professor"> Felipe Carvalho </p>
                     </td>
-
                     <td class="alternativo">
                         <p class="materia"> Gerência de Projeto I </p>
                         <p class="professor"> Ricardo Morelli </p>
                     </td>
-
                     <td>
                         <p class="materia"> Língua Estrangeira </p>
                         <p class="professor"> Érika Chiarello </p>
                     </td>
-
                     <td class="alternativo">
                         <p class="materia"> Compiladores
                         <p class="professor"> José Cabral </p>
                     </td>
-
                     <td>
                         <p class="materia"> Programação Web
                         <p class="professor"> Newton Shydeo </p>
@@ -151,4 +134,12 @@
 
         </table>
 
-    {% endblock conteudo %}
+        <nav>
+
+            <a href=""><input type="button" value="Inserir"></a>
+            <a href=""><input type="button" value="Alterar"></a>
+            <a href=""><input type="button" value="Excluir dia"></a>
+            <input type="button" value="Excluir tudo">
+
+        </nav>
+{% endblock conteudo %}

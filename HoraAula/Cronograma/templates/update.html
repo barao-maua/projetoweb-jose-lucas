@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+   
+    {% load static %}
+    
+    {% block estilo %}
+        <link rel="stylesheet" type="text/css" href="{% static '/css/update.css' %}">
+    {% endblock estilo %}
+
+
+    
+    {% block conteudo %}
+        <h1> Alterar Horário </h1>
+
+        <label for="escolha-dia"> Dia da semana: </label>
+        <select name="dia" id="escolha-dia">
+
+            <option value="segunda"> Segunda-Feira </option>
+            <option value="terca"> Terça-Feira </option>
+            <option value="quarta"> Quarta-Feira </option>
+            <option value="quinta"> Quinta-Feira </option>
+            <option value="sexta"> Sexta-Feira </option>
+
+        </select>
+
+        <br><br><br>
+
+        <table>
+
+            <tbody>
+
+                <tr class="primeiro-horario">
+
+                    <td> <p> 19h10 - 20h00 </p> </td>
+                    <td> <input type="text" name="nome-materia" id="materia1" placeholder="Nome da matéria:" disabled> </td>
+                    <td> <input type="text" name="nome-professor" id="professor1" placeholder="Nome do docente:" disabled> <button id="button1" value="0" onclick="seleciona('button1')">x</button></td>
+
+                </tr>
+
+                <tr class="segundo-horario">
+
+                    <td> <p> 20h00 - 20h50 </p> </td>
+                    <td> <input type="text" name="nome-materia" id="materia2" placeholder="Nome da matéria:" disabled> </td>
+                    <td> <input type="text" name="nome-professor" id="professor2" placeholder="Nome do docente:" disabled> <button id="button2" value="0" onclick="seleciona('button2')">x</button></td>
+
+                </tr>
+
+                <tr class="terceiro-horario">
+
+                    <td> <p> 21h05 - 21h55 </p> </td>
+                    <td> <input type="text" name="nome-materia" id="materia3" placeholder="Nome da matéria:" disabled> </td>
+                    <td> <input type="text" name="nome-professor" id="professor3" placeholder="Nome do docente:" disabled> <button id="button3" value="0" onclick="seleciona('button3')">x</button></td>
+
+                </tr>
+
+                <tr class="quarto-horario">
+
+                    <td> <p> 21h55 - 22h45 </p> </td>
+                    <td> <input type="text" name="nome-materia" id="materia4" placeholder="Nome da matéria:" disabled> </td>
+                    <td> <input type="text" name="nome-professor" id="professor4" placeholder="Nome do docente:" disabled><button id="button4" value="0" onclick="seleciona('button4')">x</button> </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <br><br>
+
+        <nav> 
+
+            <input type="button" value="Alterar">
+            <input type="submit" value="Cancelar">
+
+        </nav>
+{% endblock conteudo %}

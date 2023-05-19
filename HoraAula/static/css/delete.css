@@ -1,0 +1,42 @@
+main{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 7%;
+    margin-bottom: 7.5%;
+}
+
+    main h1 {
+
+        margin: 0;
+        padding: 20px;
+    }
+
+    main table {
+
+        margin: 0 auto;
+    }
+
+        main table tbody tr td p {
+
+            margin: 8px;
+        }
+
+            main table tbody tr td input {
+
+                margin: 5px;
+            }
+            main table tbody tr td button {
+                color: black;
+                background: gray;
+
+            }
+
+    main nav input {
+
+        margin: 0 15px;
+    }
+
+    main nav input:hover {
+
+        font-size: 100%;
+    }
