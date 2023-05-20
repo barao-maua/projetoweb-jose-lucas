@@ -6,8 +6,8 @@
 
         <ul>
 
-            <li> <a href=""> Home </a> </li>
-            <li> <a href="""> Visualização de Aula </a> </li>
+            <li> <a href="{% url 'index' %}"> Home </a> </li>
+            <li> <a href="{% url 'horario' %}"> Visualização de Aula </a> </li>
             {% if user.is_authenticated %}
                 <li> <a href="{% url 'logout' %}"> logout </a> </li>
             {% else %}

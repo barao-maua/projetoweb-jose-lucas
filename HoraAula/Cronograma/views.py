@@ -12,9 +12,9 @@ def index(request):
 class HorarioListView(generic.ListView):
     model = Horario
     template_name = 'horario.html'
-    context_object_name = 'horario'
+    context_object_name = 'horario_list'
 
 class HorarioCreateView(generic.CreateView):
     model = Horario
     template_name = 'create.html'
-    context_object_name = 'horario'
+    context_object_name = 'horario_create'

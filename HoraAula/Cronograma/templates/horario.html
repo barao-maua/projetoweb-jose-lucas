@@ -12,7 +12,6 @@
             <thead>
 
                 <tr>
-
                     <td> Horário/Dia </td>
                     <td> Segunda </td>
                     <td> Terça </td>
@@ -136,9 +135,9 @@
 
         <nav>
 
-            <a href=""><input type="button" value="Inserir"></a>
-            <a href=""><input type="button" value="Alterar"></a>
-            <a href=""><input type="button" value="Excluir dia"></a>
+            <a href="{% url 'inserir' %}"><input type="button" value="Inserir"></a>
+            <a href="{% url 'alterar' %}"><input type="button" value="Alterar"></a>
+            <a href="{% url 'deletar' %}"><input type="button" value="Excluir dia"></a>
             <input type="button" value="Excluir tudo">
 
         </nav>

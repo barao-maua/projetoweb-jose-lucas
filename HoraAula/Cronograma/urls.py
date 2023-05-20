@@ -22,7 +22,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path ('', views.index, name='index'),
-    path ('horarios', views.index, name='horario'),
+    path ('horarios', views.HorarioListView.as_view(), name='horario'),
     path ('horario/inserir', views.index, name='inserir'),
     path ('horario/alterar', views.index, name='alterar'),
     path ('horario/deletar', views.index, name='deletar'),
