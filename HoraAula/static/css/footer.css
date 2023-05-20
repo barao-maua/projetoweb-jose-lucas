@@ -1,0 +1,13 @@
+footer {
+
+    background-color: #4F4F4F;
+    padding: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer p {
+
+    color: #FFF;
+    text-align: left;
+    margin: 0;
+}
