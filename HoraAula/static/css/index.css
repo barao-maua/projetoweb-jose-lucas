@@ -31,8 +31,13 @@ hr {
     width: 60%;
     margin: 0 auto;
 }
-
-main .tabela {
+div.img{
+    text-align: center;
+}
+img{
+    width: 60%;
+}
+/* main .tabela {
     
     width: 800px;
     font-size: 14px;
@@ -108,4 +113,4 @@ main .tabela tbody tr .alternativo .materia {
 main .tabela tbody tr .alternativo .professor {
 
 
-}
+} */

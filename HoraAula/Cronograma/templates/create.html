@@ -7,7 +7,8 @@
     {% endblock estilo %}
   
     {% block conteudo %}
-        <form action="" method="post">
+        <form action="{% url 'salvar' %}" method="POST">
+            {% csrf_token %}
             <h1> Inserir Horário </h1>
             <label for="escolha-dia"> Dia da semana: </label>
             <select name="dia" id="escolha-dia">
@@ -27,34 +28,82 @@
                 <tbody>
 
                     <tr class="primeiro-horario">
-
                         <td> <p> 19h10 - 20h00 </p> </td>
-                        <td> <input type="text" name="nome-materia" id="materia" placeholder="Nome da matéria:"> </td>
-                        <td> <input type="text" name="nome-professor" id="professor" placeholder="Nome do docente:"> </td>
-
+                        <td> <select name="nome-materia1" id="materia">
+                            <option>Selecione a matéria</option>
+                            {% for materia in materias %} 
+                                <option value="{{materia.id}}"> {{ materia.nome }} </option>
+                            {% endfor %}           
+                        </select>
+                        </td>
+                        <td> 
+                            <select name="nome-professor1" id="professor">
+                                <option>Selecione a matéria</option>
+                                {% for professor in professores %} 
+                                    <option value="{{professor.id}}"> {{ professor.nome }} </option>
+                                {% endfor %}           
+                            </select>
+                        </td>
                     </tr>
 
                     <tr class="segundo-horario">
 
                         <td> <p> 20h00 - 20h50 </p> </td>
-                        <td> <input type="text" name="nome-materia" id="materia" placeholder="Nome da matéria:"> </td>
-                        <td> <input type="text" name="nome-professor" id="professor" placeholder="Nome do docente:"> </td>
+                        <td> <select name="nome-materia2" id="materia">
+                            <option>Selecione a matéria</option>
+                            {% for materia in materias %} 
+                                <option value="{{materia.id}}"> {{ materia.nome }} </option>
+                            {% endfor %}           
+                        </select>
+                    </td>
+                        <td> <select name="nome-professor2" id="professor">
+                                <option>Selecione a matéria</option>
+                                {% for professor in professores %} 
+                                    <option value="{{professor.id}}"> {{ professor.nome }} </option>
+                                {% endfor %}           
+                            </select>
+                        </td>
 
                     </tr>
 
                     <tr class="terceiro-horario">
 
                         <td> <p> 21h05 - 21h55 </p> </td>
-                        <td> <input type="text" name="nome-materia" id="materia" placeholder="Nome da matéria:"> </td>
-                        <td> <input type="text" name="nome-professor" id="professor" placeholder="Nome do docente:"> </td>
-
+                        <td><select name="nome-materia3" id="materia">
+                            <option>Selecione a matéria</option>
+                            {% for materia in materias %} 
+                                <option value="{{materia.id}}"> {{ materia.nome }} </option>
+                            {% endfor %}           
+                        </select> 
+                        </td>
+                        <td> 
+                            <select name="nome-professor3" id="professor">
+                                <option>Selecione a matéria</option>
+                                {% for professor in professores %} 
+                                    <option value="{{professor.id}}"> {{ professor.nome }} </option>
+                                {% endfor %}           
+                            </select>
+                        </td>
                     </tr>
 
                     <tr class="quarto-horario">
 
                         <td> <p> 21h55 - 22h45 </p> </td>
-                        <td> <input type="text" name="nome-materia" id="materia" placeholder="Nome da matéria:"> </td>
-                        <td> <input type="text" name="nome-professor" id="professor" placeholder="Nome do docente:"> </td>
+                        <td><select name="nome-materia4" id="materia">
+                            <option>Selecione a matéria</option>
+                            {% for materia in materias %} 
+                                <option value="{{materia.id}}"> {{ materia.nome }} </option>
+                            {% endfor %}           
+                        </select> 
+                        </td>
+                        <td> 
+                            <select name="nome-professor4" id="professor">
+                                <option>Selecione a matéria</option>
+                                {% for professor in professores %} 
+                                    <option value="{{professor.id}}"> {{ professor.nome }} </option>
+                                {% endfor %}           
+                            </select>
+                        </td>
 
                     </tr>
 
@@ -66,8 +115,8 @@
             <br><br>
 
             <nav> 
-
-                <input class="button" type="button" value="Salvar">
+                <!-- <button type="submit" class="button"></button> -->
+                <input class="button" type="submit" value="Salvar">
                 <input class="button" type="button" value="Cancelar">
 
             </nav>

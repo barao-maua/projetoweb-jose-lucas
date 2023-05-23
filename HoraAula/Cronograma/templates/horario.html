@@ -27,9 +27,9 @@
 
                 <tr>
                     <td> 19h10 - 20h00 </td>
-                    {% for horario in horario_list%}
+                    {% for horario in horario_list %}
                         {% if horario.horario == '19:10 - 20:00' %}
-                            {% if horario.dia == 'Terca' or horario.dia == 'Quinta' %}
+                            {% if horario.dia == 'terca' or horario.dia == 'quinta' %}
                                 <td class="alternativo">
                                     <p class="materia"> {{horario.materia.nome}} </p>
                                     <p class="professor"> {{horario.professor.nome}} </p>
@@ -48,7 +48,7 @@
                     <td> 20h00 - 20h50 </td>
                     {% for horario in horario_list%}
                         {% if horario.horario == '20:00 - 20:50' %}
-                            {% if horario.dia == 'Terca' or horario.dia == 'Quinta' %}
+                            {% if horario.dia == 'terca' or horario.dia == 'quinta' %}
                                 <td class="alternativo">
                                     <p class="materia"> {{horario.materia.nome}} </p>
                                     <p class="professor"> {{horario.professor.nome}} </p>
@@ -67,7 +67,7 @@
                     <td> 21h05 - 21h55 </td>
                     {% for horario in horario_list%}
                         {% if horario.horario == '21:05 - 21:55' %}
-                            {% if horario.dia == 'Terca' or horario.dia == 'Quinta' %}
+                            {% if horario.dia == 'terca' or horario.dia == 'quinta' %}
                                 <td class="alternativo">
                                     <p class="materia"> {{horario.materia.nome}} </p>
                                     <p class="professor"> {{horario.professor.nome}} </p>
@@ -86,7 +86,7 @@
                     <td> 21h55 - 22h45 </td>
                     {% for horario in horario_list%}
                         {% if horario.horario == '21:55 - 22:45' %}
-                            {% if horario.dia == 'Terca' or horario.dia == 'Quinta' %}
+                            {% if horario.dia == 'terca' or horario.dia == 'quinta' %}
                                 <td class="alternativo">
                                     <p class="materia"> {{horario.materia.nome}} </p>
                                     <p class="professor"> {{horario.professor.nome}} </p>
@@ -110,7 +110,7 @@
             <a href="{% url 'inserir' %}"><input type="button" value="Inserir"></a>
             <a href="{% url 'alterar' %}"><input type="button" value="Alterar"></a>
             <a href="{% url 'deletar' %}"><input type="button" value="Excluir dia"></a>
-            <input type="button" value="Excluir tudo">
+            <a href="{% url 'deletarAll' %}"><input type="button" value="Excluir tudo"></a>
 
         </nav>
 {% endblock conteudo %}
