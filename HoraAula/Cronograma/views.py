@@ -86,3 +86,7 @@ def deleteDia(request):
 def horario_list(request):
     horario_all = Horario.objects.all()
     return render(request,"horario.html",{'horario_list':horario_all})
+
+def detalhe(request):
+    materia_all = Materia.objects.all()
+    return render(request,"detalhe.html",{'detalhe_list':materia_all})

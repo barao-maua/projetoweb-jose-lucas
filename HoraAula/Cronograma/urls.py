@@ -11,7 +11,7 @@ urlpatterns = [
     path ('horarios', views.horario_list, name='horario'),
     path ('horario/inserir', views.inserir, name='inserir'),
     path ('horario/inserir/salvar', views.salvar, name='salvar'),
-    path ('horario/alterar', views.index, name='alterar'),
+    path ('horario/detalhe', views.detalhe, name='alterar'),
     path ('horario/deletar', views.deleteDia, name='deletar'),
     path ('horario/deletartudo',views.DeleteAll, name='deletarAll'),
 ] 
