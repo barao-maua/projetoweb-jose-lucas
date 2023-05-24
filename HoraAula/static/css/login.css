@@ -1,0 +1,36 @@
+main {
+
+    min-height: 100vh;
+    text-align: center;
+}
+
+main h1 {
+
+    font-size: 2.5em;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+main form {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main form label {
+
+    width: 100%;
+    text-align: center;
+}
+
+main form input {
+
+    margin-top: 20px;
+}
+
+main form button {
+
+    margin-top: 25px;
+}
