@@ -3,10 +3,13 @@
     {% load static %}
     
     {% block estilo %}
+
         <link rel="stylesheet" type="text/css" href="{% static '/css/index.css' %}">
-    {% endblock estilo %}
-
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+        {% endblock estilo %}
     
     {% block conteudo %}
 
@@ -18,9 +21,13 @@
         </div>
 
         <hr>
+
         <div class="img">
+            
             <img src="{% static '/images/tabela.png' %}" alt="imagem visual da tabela de visualização das aulas">
+        
         </div>
+        
         <!-- <table class="tabela">
 
             <thead>
@@ -152,5 +159,11 @@
             </tbody>
 
         </table> -->
+
+        <div class="botao">
+        
+            <a href="read.html"><input type="button" value="Acessar Horários"></a>
+        
+        </div>
 
     {% endblock conteudo %}

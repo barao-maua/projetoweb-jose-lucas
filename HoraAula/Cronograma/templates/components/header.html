@@ -12,9 +12,9 @@
             <li> <a href="{% url 'index' %}"> Home </a> </li>
             <li> <a href="{% url 'horario' %}"> Visualização de Aula </a> </li>
             {% if user.is_authenticated %}
-                <li> <a href="{% url 'logout' %}"> logout </a> </li>
+                <li> <a href="{% url 'logout' %}"> Logout </a> </li>
             {% else %}
-                <li> <a href="{% url 'login' %}"> login </a> </li>
+                <li> <a href="{% url 'login' %}"> Login </a> </li>
             {% endif %}
         </ul>
 
