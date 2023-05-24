@@ -58,6 +58,30 @@ def DeleteAll(request):
     horario_all = Horario.objects.all()
     return render(request,"horario.html",{'horario_list':horario_all})
 
+# def delete(request):
+#     button1 = request.POST.get("button1")
+#     button2 = request.POST.get("button2")
+#     button3 = request.POST.get("button3")
+#     button4 = request.POST.get("button4")
+#     if (button1 == 1){
+
+#     }
+#     if (button2 == 1){
+
+#     }
+#     if(button3 == 1){
+
+#     }
+#     if(button4 == 1 ){
+
+#     }
+#     return redirect(horario_list)
+
+def deleteDia(request):
+    horario_all = Horario.objects.all()
+    dia = request.POST.get("escolha-dia")
+    return render(request,"delete.html",{'delete_list':horario_all,'dia_semana':dia})
+    
 
 def horario_list(request):
     horario_all = Horario.objects.all()
