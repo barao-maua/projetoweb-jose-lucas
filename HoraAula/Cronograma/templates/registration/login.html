@@ -5,24 +5,24 @@
         <link rel="stylesheet" type="text/css" href="{% static '/css/login.css' %}">
     {% endblock %}
 
- {% block conteudo %}
+{% block conteudo %}
 
-<section class="container" style="max-width: 40%">
-<h1>Entrar no sistema</h1>
+  <main>
 
-<form action="{% url 'login' %}" method="post">
-  {% csrf_token %}
-  <div class="mb-3">
-    <label for="" class="form-label">Usuario</label>
-    <input type="text" class="form-control" name="username" id="" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="" class="form-label">Senha</label>
-    <input type="password" class="form-control" name="password" id="exampleInputPassword1">
-  </div>
-  <button type="submit" class="btn btn-primary">Entrar</button>
-</form>
-</section>
+    <h1> Login </h1>
 
+    <form action="{% url 'login' %}" method="post">
+
+        {% csrf_token %}
+
+        <label for="" class="form-label"> Usuário <input type="text" class="form-control" name="username" id="" aria-describedby="emailHelp"></label>
+
+        <label for="" class="form-label"> Senha <input type="password" class="form-control" name="password" id="exampleInputPassword1"></label>
+
+        <button type="submit" class="btn btn-primary"> Entrar </button>
+
+    </form>
+
+  </main>
 
 {% endblock %}
