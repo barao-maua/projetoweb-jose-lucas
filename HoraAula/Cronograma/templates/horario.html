@@ -41,29 +41,31 @@
                     <td> 19h10 - 20h00 </td>
 
                     {% for horario in horario_list %}
-
+                        <a href="{% url 'detalhe' horario.id %}">
                         {% if horario.horario == '19:10 - 20:00' %}
                             {% if horario.dia == 'terca' or horario.dia == 'quinta' %}
 
                                 <td class="alternativo">
+                                <a href="{% url 'detalhe' horario.id %}">
                                     
                                     <p class="materia"> {{horario.materia.nome}} </p>
                                     <p class="professor"> {{horario.professor.nome}} </p>
-                                
+                                </a>
                                 </td>
 
                             {% else %}
 
                                 <td>
+                                    <a href="{% url 'detalhe' horario.id %}">
 
                                     <p class="materia"> {{horario.materia.nome}} </p>
                                     <p class="professor"> {{horario.professor.nome}} </p>
-
+                                    </a>
                                 </td> 
 
                                 {% endif %}
                         {% endif %}
-
+                        
                     {% endfor %}
 
                 </tr>
@@ -72,29 +74,29 @@
                     <td> 20h00 - 20h50 </td>
 
                     {% for horario in horario_list%}
-
+                        <a href="{% url 'detalhe' horario.id %}">
                         {% if horario.horario == '20:00 - 20:50' %}
                             {% if horario.dia == 'terca' or horario.dia == 'quinta' %}
 
                                 <td class="alternativo">
+                                   <a href="{% url 'detalhe' horario.id %}">
 
-                                    <p class="materia"> {{horario.materia.nome}} </p>
-                                    <p class="professor"> {{horario.professor.nome}} </p>
-
+                                        <p class="materia"> {{horario.materia.nome}} </p>
+                                        <p class="professor"> {{horario.professor.nome}} </p>
+                                   </a>
                                 </td>
 
                             {% else %}
 
                                 <td>
-
+                                <a href="{% url 'detalhe' horario.id %}">
                                     <p class="materia"> {{horario.materia.nome}} </p>
                                     <p class="professor"> {{horario.professor.nome}} </p>
-
+                                </a>
                                 </td> 
 
                                 {% endif %}     
                         {% endif %}
-
                     {% endfor %}
 
                 </tr>
@@ -104,29 +106,28 @@
                     <td> 21h05 - 21h55 </td>
 
                     {% for horario in horario_list%}
-
+                        
                         {% if horario.horario == '21:05 - 21:55' %}
                             {% if horario.dia == 'terca' or horario.dia == 'quinta' %}
-
+                                
                                 <td class="alternativo">
-
-                                    <p class="materia"> {{horario.materia.nome}} </p>
-                                    <p class="professor"> {{horario.professor.nome}} </p>
-
+                                    <a href="{% url 'detalhe' horario.id %}">
+                                        <p class="materia"> {{horario.materia.nome}} </p>
+                                        <p class="professor"> {{horario.professor.nome}} </p>
+                                    </a>
                                 </td>
 
                             {% else %}
 
                                 <td>
-
-                                    <p class="materia"> {{horario.materia.nome}} </p>
-                                    <p class="professor"> {{horario.professor.nome}} </p>
-
+                                    <a href="{% url 'detalhe' horario.id %}">
+                                        <p class="materia"> {{horario.materia.nome}} </p>
+                                        <p class="professor"> {{horario.professor.nome}} </p>
+                                    </a>
                                 </td> 
 
                             {% endif %}    
                         {% endif %}
-
                     {% endfor %}
 
                 </tr>
@@ -136,29 +137,25 @@
                     <td> 21h55 - 22h45 </td>
 
                     {% for horario in horario_list%}
-
+                        
                         {% if horario.horario == '21:55 - 22:45' %}
                             {% if horario.dia == 'terca' or horario.dia == 'quinta' %}
-
-                                <td class="alternativo">
-
-                                    <p class="materia"> {{horario.materia.nome}} </p>
-                                    <p class="professor"> {{horario.professor.nome}} </p>
-
-                                </td>
-
+                                    <td class="alternativo">
+                                    <a href="{% url 'detalhe' horario.id %}">
+                                        <p class="materia"> {{horario.materia.nome}} </p>
+                                        <p class="professor"> {{horario.professor.nome}} </p>
+                                    </a>
+                                    </td>  
                             {% else %}
-
-                                <td>
-
-                                    <p class="materia"> {{horario.materia.nome}} </p>
-                                    <p class="professor"> {{horario.professor.nome}} </p>
-
-                                </td> 
-
+                                    
+                                    <td>
+                                        <a href="{% url 'detalhe' horario.id %}">
+                                            <p class="materia"> {{horario.materia.nome}} </p>
+                                            <p class="professor"> {{horario.professor.nome}} </p>
+                                        </a>
+                                    </td> 
                                 {% endif %}
                         {% endif %}
-
                     {% endfor %}
 
                 </tr>

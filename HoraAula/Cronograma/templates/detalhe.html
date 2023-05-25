@@ -7,5 +7,14 @@
     {% endblock estilo %}
   
     {% block conteudo %}
+    <main>
+        <h1> Detalhes da Aula: {{ horario.materia.nome }}</h1>
 
+        <h2>Descrição: </h2>{{ horario.materia.descrição }} 
+        <h2>Curso: </h2>{{ horario.materia.curso }}
+        <h2>Semestre:</h2>{{ horario.materia.semestre }}
+        <h2>Professor:</h2>{{ horario.materia.professor.nome }}
+        <h2>Dia: </h2>{{ horario.dia }}
+        <h2>Horário: </h2>{{ horario.horario }}
+    </main>
     {% endblock conteudo %}
