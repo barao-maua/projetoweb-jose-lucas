@@ -26,7 +26,7 @@ function seleciona(button) {
         button.value = 0;
     }
 }
-function reload(e){
+function save_storege(e){
     var select = document.getElementById("escolha-dia");
 
      // select.addEventListener("change", function(e) {
@@ -40,14 +40,13 @@ function reload(e){
           break;
         }
       }
-      window.location.reload();
    
 }
 
 (function(){
     var select = document.getElementById("escolha-dia");
     storage = localStorage.getItem("selected");
-    if(storage != " "){
+    if(storage != null){
         select.value =  localStorage.getItem("selected");
     }
 })();

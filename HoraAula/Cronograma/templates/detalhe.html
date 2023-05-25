@@ -13,14 +13,15 @@
   
     {% block conteudo %}
 
-        <h1> Detalhes da Matéria </h1>
-
-        <p> Matéria: </p> {{ horario.materia.nome }}
-        <p> Descrição: </p> {{ horario.materia.descrição }} 
-        <p> Curso: </p> {{ horario.materia.curso }}
-        <p> Semestre: </p> {{ horario.materia.semestre }}
-        <p> Professor: </p> {{ horario.materia.professor.nome }}
-        <p> Dia: </p> {{ horario.dia }}
-        <p> Horário: </p> {{ horario.horario }}
-
+        <h1> Detalhes da Aula </h1>
+        <div>
+            <p> <span>Matéria:</span> {{ horario.materia.nome }}</p> 
+            <p> <span>Descrição:</span> {{ horario.materia.descricao }} </p> 
+            <p> <span>Curso:</span>  {{ horario.materia.curso }}</p> 
+            <p> <span>Semestre:</span> {{ horario.materia.semestre }}</p> 
+            <p> <span>Professor:</span> {{ horario.materia.professor.nome }}</p> 
+            <p> <span>Dia:</span>  {{ horario.dia }}</p> 
+            <p> <span>Horário:</span> {{ horario.horario }}</p> 
+        </div>
+        <a href="{% url 'horario' %}"><button>Voltar</button></a>
     {% endblock conteudo %}
