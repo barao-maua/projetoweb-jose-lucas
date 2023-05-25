@@ -3,7 +3,12 @@
     {% load static %}
     
     {% block estilo %}
+
         <link rel="stylesheet" type="text/css" href="{% static '/css/delete.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
     {% endblock estilo %}
   
     {% block conteudo %}
@@ -21,29 +26,38 @@
 
         </select>
 
-        <br><br><br>
+        <!-- <br><br><br> -->
 
         <table>
 
             <tbody>
+
                     <tr class="primeiro-horario">
+
                         <td> <p> 19h10 - 20h00 </p> </td>
-                        <h1>{{ dia_semana }}</h1>
+
+                        <h1> {{ dia_semana }} </h1>
+
                         {% for horario in delete_list %}
+
                             {% if dia_semana == horario.dia  %}
-                                {% if horario.horario == '19:10 - 20:00' %}    
+                                {% if horario.horario == '19:10 - 20:00' %}  
+
                                     <td> <input type="text" name="nome-materia1" id="materia1" placeholder="{{horario.materia.nome}}" > </td>
-                                    <td> <input type="text" name="nome-professor1" id="professor1" placeholder="{{horario.professor.nome}}" > <button button name="button1" id="button1" value="0" onclick="seleciona('button1')">x</button> </td>
+                                    <td> <input type="text" name="nome-professor1" id="professor1" placeholder="{{horario.professor.nome}}" > <button button name="button1" id="button1" value="0" onclick="seleciona('button1')"> x </button> </td>
+
                                 {% endif %}
-                                {% endif %}
+                            {% endif %}
+
                         {% endfor %}
+
                     </tr>
 
             </tbody>
 
         </table>
 
-        <br><br>
+        <!-- <br><br> -->
 
         <nav> 
 
@@ -53,4 +67,5 @@
         </nav>
 
         <script src="{% static '/javascript/delete.js' %}"></script>
+
     {% endblock conteudo %}

@@ -3,18 +3,24 @@
     {% load static %}
     
     {% block estilo %}
+
         <link rel="stylesheet" type="text/css" href="{% static '/css/detalhe.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
     {% endblock estilo %}
   
     {% block conteudo %}
-    <main>
-        <h1> Detalhes da Aula: </h1>
-        <h2>Matéria:</h2>{{ horario.materia.nome }}
-        <h2>Descrição: </h2>{{ horario.materia.descrição }} 
-        <h2>Curso: </h2>{{ horario.materia.curso }}
-        <h2>Semestre:</h2>{{ horario.materia.semestre }}
-        <h2>Professor:</h2>{{ horario.materia.professor.nome }}
-        <h2>Dia: </h2>{{ horario.dia }}
-        <h2>Horário: </h2>{{ horario.horario }}
-    </main>
+
+        <h1> Detalhes da Matéria </h1>
+
+        <p> Matéria: </p> {{ horario.materia.nome }}
+        <p> Descrição: </p> {{ horario.materia.descrição }} 
+        <p> Curso: </p> {{ horario.materia.curso }}
+        <p> Semestre: </p> {{ horario.materia.semestre }}
+        <p> Professor: </p> {{ horario.materia.professor.nome }}
+        <p> Dia: </p> {{ horario.dia }}
+        <p> Horário: </p> {{ horario.horario }}
+
     {% endblock conteudo %}

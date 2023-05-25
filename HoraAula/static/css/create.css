@@ -1,39 +1,72 @@
-main{
+main {
 
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: 7%;
-    margin-bottom: 7.5%;
 }
 
-    main h1 {
+main form {
 
-        margin: 0;
-        padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
 
-    }
+main form h1 {
 
-    main table {
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
 
-        margin: 0 auto;
-    }
+main form label {
 
-        main table tbody tr td p {
+    
+}
 
-            margin: 8px;
-        }
+main form select {
 
-            main table tbody tr td select {
+    
+}
 
-                margin: 5px;
-            }
+main form select option {
 
-    main nav input.button {
 
-        margin: 0 15px;
-    }
+}
 
-    main nav input.button:hover {
+main form table {
 
-        font-size: 100%;
-    }
+    margin: 0 auto;
+}
+
+main form table tbody {
+
+
+}
+
+main form table tbody tr {
+
+
+}
+
+main form table tbody tr .horario {
+
+
+}
+
+main form table tbody tr td {
+
+
+}
+
+main form table tbody tr td input {
+
+    margin: 10px;
+}
+
+main form nav {
+
+
+}
+
+main form nav input {
+
+    margin: 0 20px 100px;
+    font-size: 100%;
+}
