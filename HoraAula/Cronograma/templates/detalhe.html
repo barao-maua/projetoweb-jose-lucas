@@ -8,8 +8,8 @@
   
     {% block conteudo %}
     <main>
-        <h1> Detalhes da Aula: {{ horario.materia.nome }}</h1>
-
+        <h1> Detalhes da Aula: </h1>
+        <h2>Matéria:</h2>{{ horario.materia.nome }}
         <h2>Descrição: </h2>{{ horario.materia.descrição }} 
         <h2>Curso: </h2>{{ horario.materia.curso }}
         <h2>Semestre:</h2>{{ horario.materia.semestre }}
