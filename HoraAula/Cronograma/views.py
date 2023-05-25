@@ -82,12 +82,10 @@ def deleteDia(request):
     dia = request.POST.get("escolha-dia")
     return render(request,"delete.html",{'delete_list':horario_all,'dia_semana':dia})
     
-@login_required
 def horario_list(request):
     horario_all = Horario.objects.all()
     return render(request,"horario.html",{'horario_list':horario_all})
 
-@login_required
 def detalhe(request):
     materia_all = Materia.objects.all()
     return render(request,"detalhe.html",{'detalhe_list':materia_all})
