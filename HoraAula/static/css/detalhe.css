@@ -28,3 +28,6 @@ main div{
 main div p span{
     font-weight: 900;
 }
+a{
+    margin: 50%;
+}

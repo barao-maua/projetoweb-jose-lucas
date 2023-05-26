@@ -49,8 +49,8 @@ def salvar(request):
                            professor=professor4, 
                            materia=materia4)
     horario_all = Horario.objects.all()
-    
     return redirect(horario_list)
+
 @login_required
 def DeleteAll(request):
     horario= Horario.objects.all()

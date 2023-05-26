@@ -18,9 +18,9 @@
         <form action="{% url 'salvar' %}" method="POST">
 
             {% csrf_token %}
-
+            <br><br>
             <h1> Inserir Horário </h1>
-
+            <br><br>
             <label for="escolha-dia"> Dia da semana: </label>
             <select name="dia" id="escolha-dia">
 
@@ -194,17 +194,18 @@
 
             </table>
 
-            <br><br>
+            <br><br><br><br>
 
             <nav>
 
                 <!-- <button type="submit" class="button"></button> -->
                 <input class="button" type="submit" value="Salvar">
-                <input class="button" type="button" value="Cancelar">
+                <a href=""><input class="button" type="button" value="Cancelar"></a>
 
             </nav>
 
         </form>
+        <br><br>
 
     </main>
 
