@@ -12,6 +12,7 @@ def inserir(request):
     professor = Professor.objects.all()
     materias = Materia.objects.all()
     return render(request, "create.html",{'materias': materias,'professores':professor})
+
 @login_required
 def salvar(request):
     dia = request.POST.get("dia")
